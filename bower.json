@@ -1,0 +1,14 @@
+{
+  "name": "gruntbase",
+  "version": "1.0.0",
+  "devDependencies": {
+    "jquery": "1.11.1"
+  },
+  "dependencies": {
+    "sanitize-css": "~1.1.0",
+    "normalize-opentype.css": "~0.2.4",
+    "modernizr": "~2.8.3",
+    "picturefill": "~2.3.1",
+    "equalize-heights": "~1.0.0"
+  }
+}
