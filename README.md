@@ -1,7 +1,7 @@
 # Gruntbase
 
-> Grunt project base
+> A simple Grunt base for web projects
 
 ---
 
-[@_mattbailey](https://twitter.com/_mattbailey)
+Created by [Matt Bailey](http://mattbailey.io/).
