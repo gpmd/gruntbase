@@ -12,7 +12,6 @@ module.exports = {
   ],
   devSecond: [
     'jshint',
-    'scsslint',
     'concat:modules'
   ],
   devThird: [
@@ -29,8 +28,7 @@ module.exports = {
     'modernizr'
   ],
   devSixth: [
-    'clean:modules',
-    'stylestats'
+    'clean:modules'
   ],
 
   // Production tasks

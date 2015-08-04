@@ -21,7 +21,8 @@ module.exports = function(grunt, data) {
         'concurrent:devFourth',
         'concurrent:devFifth',
         'concurrent:devSixth',
-        'img'
+        'img',
+        'report'
       ]
     },
 
@@ -45,6 +46,15 @@ module.exports = function(grunt, data) {
       tasks: [
         'concurrent:imgFirst'
       ]
-    }
+    },
+
+    report: {
+      description: 'Styles reporting',
+      tasks: [
+        'scsslint',
+        'csscss',
+        'stylestats'
+      ]
+    },
   };
 };
