@@ -7,8 +7,8 @@
    ========================================================================== */
 
 ;(function($, window, document, undefined) {
-    'use strict';
+  'use strict';
 
-    console.log('Goodbye world!');
+  console.log('Goodbye world!');
 
 })(jQuery, window, document);
