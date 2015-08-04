@@ -1,15 +1,14 @@
 module.exports = {
 
-    dist: [
-        'dist'
-    ],
+  dist: [
+    'dist'
+  ],
 
-    tmp: [
-        'tmp'
-    ],
+  tmp: [
+    'tmp'
+  ],
 
-    modules: [
-        '<%= project.src %>/scripts/modules/modules-combined.js',
-        '<%= project.src %>/scripts/modules/modules-combined.min.js'
-    ]
+  modules: [
+    '<%= project.src %>/scripts/modules/modules-combined.*'
+  ]
 };

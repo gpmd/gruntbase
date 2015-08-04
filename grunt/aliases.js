@@ -1,49 +1,50 @@
 module.exports = function(grunt, data) {
 
-    // Vars
-    var env = data.env || 'prod';
+  // Vars
+  var env = data.env || 'prod';
 
-    return {
+  return {
 
-        default: {
-            description: 'Default build',
-            tasks: [
-                env
-            ]
-        },
+    default: {
+      description: 'Default build',
+      tasks: [
+        env
+      ]
+    },
 
-        dev: {
-            description: 'Development build',
-            tasks: [
-                'concurrent:devFirst',
-                'concurrent:devSecond',
-                'concurrent:devThird',
-                'concurrent:devFourth',
-                'concurrent:devFifth',
-                'concurrent:devSixth',
-                'img'
-            ]
-        },
+    dev: {
+      description: 'Development build',
+      tasks: [
+        'concurrent:devFirst',
+        'concurrent:devSecond',
+        'concurrent:devThird',
+        'concurrent:devFourth',
+        'concurrent:devFifth',
+        'concurrent:devSixth',
+        'img'
+      ]
+    },
 
-        prod: {
-            description: 'Production build',
-            tasks: [
-                'concurrent:prodFirst',
-                'concurrent:prodSecond',
-                'img',
-                'concurrent:prodThird',
-                'concurrent:prodFourth',
-                'concurrent:prodFifth',
-                'concurrent:prodSixth',
-                'concurrent:prodSeventh'
-            ]
-        },
+    prod: {
+      description: 'Production build',
+      tasks: [
+        'concurrent:prodFirst',
+        'concurrent:prodSecond',
+        'img',
+        'concurrent:prodThird',
+        'concurrent:prodFourth',
+        'concurrent:prodFifth',
+        'concurrent:prodSixth',
+        'concurrent:prodSeventh',
+        'concurrent:prodEighth'
+      ]
+    },
 
-        img: {
-            description: 'Image tasks',
-            tasks: [
-                'concurrent:imgFirst'
-            ]
-        }
-    };
+    img: {
+      description: 'Image tasks',
+      tasks: [
+        'concurrent:imgFirst'
+      ]
+    }
+  };
 };
