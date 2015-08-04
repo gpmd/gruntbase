@@ -29,6 +29,9 @@ module.exports = {
         'modernizr',
         'clean:modules'
     ],
+    devSixth: [
+        'stylestats'
+    ],
 
     // Production tasks
     prodFirst: [

@@ -20,6 +20,7 @@ module.exports = function(grunt, data) {
                 'concurrent:devThird',
                 'concurrent:devFourth',
                 'concurrent:devFifth',
+                'concurrent:devSixth',
                 'img'
             ]
         },
