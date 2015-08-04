@@ -16,7 +16,7 @@ grunt --env=dev
 grunt --env=prod
 ```
 
-**Styles (SCSS/CSS) reporting mode:**
+**Styles reporting (SCSS lint / CSS stats) mode:**
 
 ```bash
 grunt report
