@@ -30,13 +30,6 @@ module.exports = function(grunt, data) {
         'scsslint',
         'sass:dev'
       ]
-    },
-
-    templates: {
-      files: [
-        'templates/**/*.ss'
-      ],
-      tasks: []
-    },
+    }
   };
 };
