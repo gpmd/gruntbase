@@ -16,9 +16,10 @@ module.exports = function(grunt, data) {
       ],
       tasks: [
         'jshint:scripts',
-        'concat',
-        'uglify',
-        'copy:modules'
+        'concat:modules',
+        'uglify:scriptsDev',
+        'uglify:modulesDev',
+        'copy:modulesDev'
       ]
     },
 
@@ -27,7 +28,7 @@ module.exports = function(grunt, data) {
         '<%= project.src %>/styles/**/*.scss'
       ],
       tasks: [
-        'scsslint',
+        // 'scsslint',
         'sass:dev'
       ]
     }
