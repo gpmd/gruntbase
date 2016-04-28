@@ -52,7 +52,6 @@ module.exports = function(grunt, data) {
       description: 'Styles reporting',
       tasks: [
         'scsslint',
-        'csscss',
         'stylestats'
       ]
     },
