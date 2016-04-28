@@ -14,7 +14,6 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-csscss": "^0.6.2",
     "grunt-modernizr": "^1.0.0",
     "grunt-sass": "^1.1.0-beta",
     "grunt-scss-lint": "^0.3.8",
