@@ -16,10 +16,8 @@ module.exports = function(grunt, data) {
       ],
       tasks: [
         'jshint:scripts',
-        'concat:modules',
         'uglify:scriptsDev',
-        'uglify:modulesDev',
-        'copy:modulesDev'
+        'uglify:modulesDev'
       ]
     },
 
