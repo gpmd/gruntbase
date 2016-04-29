@@ -10,9 +10,6 @@ module.exports = {
         src: '<%= component.jquerySourceMap %>',
         dest: '<%= project.dist %>/scripts/vendor/jquery.min.map'
       }, {
-        src: '<%= component.requireJS %>',
-        dest: '<%= project.dist %>/scripts/vendor/require.js'
-      }, {
         src: '<%= component.picturefill %>',
         dest: '<%= project.dist %>/scripts/vendor/picturefill.min.js'
       }, {
