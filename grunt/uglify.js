@@ -26,9 +26,15 @@ module.exports = {
       beautify: true,
       sourceMap: true
     },
-    files: {
-      'src/scripts/modules/modules-combined.js': ['src/scripts/modules/modules-combined.js']
-    }
+    files: [
+      {
+        expand: true,
+        cwd: '<%= project.src %>/scripts/modules',
+        src: '*.js',
+        dest: '<%= project.dist %>/scripts/modules',
+        ext: '.js'
+      }
+    ]
   },
 
   // Production tasks
@@ -57,8 +63,14 @@ module.exports = {
       beautify: false,
       sourceMap: false
     },
-    files: {
-      'src/scripts/modules/modules-combined.js': ['src/scripts/modules/modules-combined.js']
-    }
+    files: [
+      {
+        expand: true,
+        cwd: '<%= project.src %>/scripts/modules',
+        src: '*.js',
+        dest: '<%= project.dist %>/scripts/modules',
+        ext: '.js'
+      }
+    ]
   }
 };
