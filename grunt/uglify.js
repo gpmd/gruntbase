@@ -15,6 +15,8 @@ module.exports = {
         src: '*.js',
         dest: '<%= project.dist %>/scripts',
         ext: '.js'
+      }, {
+        '<%= project.dist %>/scripts/vendor/require.js': ['<%= component.requireJS %>']
       }
     ]
   },
@@ -52,6 +54,8 @@ module.exports = {
         src: '*.js',
         dest: '<%= project.dist %>/scripts',
         ext: '.js'
+      }, {
+        '<%= project.dist %>/scripts/vendor/require.js': ['<%= component.requireJS %>']
       }
     ]
   },
