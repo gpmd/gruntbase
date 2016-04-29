@@ -2,13 +2,14 @@
   "name": "gruntbase",
   "version": "1.0.0",
   "devDependencies": {
-    "jquery": "2.2.3"
+    "jquery": "1.12.3"
   },
   "dependencies": {
     "sanitize-css": "~1.1.0",
     "normalize-opentype.css": "~0.2.4",
     "modernizr": "~3.3.1",
     "picturefill": "~3.0.2",
-    "equalize-heights": "~1.0.0"
+    "equalize-heights": "~1.0.0",
+    "requirejs": "^2.2.0"
   }
 }

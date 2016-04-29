@@ -11,8 +11,7 @@ module.exports = {
     'clean:tmp'
   ],
   devSecond: [
-    'jshint',
-    'concat:modules'
+    'jshint'
   ],
   devThird: [
     'sass:dev',
@@ -20,8 +19,7 @@ module.exports = {
     'uglify:modulesDev'
   ],
   devFourth: [
-    'copy:components',
-    'copy:modulesDev'
+    'copy:components'
   ],
   devFifth: [
     'autoprefixer',
@@ -37,8 +35,7 @@ module.exports = {
     'clean:tmp'
   ],
   prodSecond: [
-    'jshint',
-    'concat:modules'
+    'jshint'
   ],
   prodThird: [
     'sass:prod',
@@ -46,8 +43,7 @@ module.exports = {
     'uglify:modulesProd'
   ],
   prodFourth: [
-    'copy:components',
-    'copy:modulesProd'
+    'copy:components'
   ],
   prodFifth: [
     'autoprefixer',

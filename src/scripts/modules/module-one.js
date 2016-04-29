@@ -1,14 +1,7 @@
-/**
- * module-one.js
- */
-
-/* ==========================================================================
-   Example module
-   ========================================================================== */
-
-;(function($, window, document, undefined) {
-  'use strict';
-
-  console.log('Goodbye world!');
-
-})(jQuery, window, document);
+define([], function(){
+  var o = {};
+  o.getMessage = function() {
+    return 'Hello World!';
+  };
+  return o;
+});
