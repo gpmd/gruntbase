@@ -2,15 +2,27 @@ module.exports = {
 
   // Distribution settings
   dist: {
-    devFile: '<%= component.modernizr %>',
-    outputFile: '<%= project.dist %>/scripts/vendor/modernizr.min.js',
-    'extra': {
-      'shiv': true,
-      'picture': true,
-      'mq': true,
-      'csscolumns': true,
-      'flexbox': true
-    },
+    cache : true,
+    devFile: '<%= component.modernizrDevFile %>',
+    dest: '<%= project.dist %>/scripts/vendor/modernizr.min.js',
+    'options' : [
+      'setClasses',
+      'addTest',
+      'html5printshiv',
+      'html5shiv',
+      'testProp',
+      'fnBind'
+    ],
+    uglify: true,
+    matchCommunityTests: true,
+    tests : [
+      'touchevents'
+    ],
+    excludeTests: [
+      'hidden'
+    ],
+    crawl : true,
+    useBuffers : false,
     files: {
       src: [
 
@@ -19,8 +31,9 @@ module.exports = {
         '!<%= project.dist %>/scripts/vendor/*',
 
         // Styles
-        '<%= project.dist %>/styles/{,*/}*.css',
+        '<%= project.dist %>/styles/{,*/}*.css'
       ]
-    }
+    },
+    customTests: []
   }
 };
