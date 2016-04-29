@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       component: {
         jquery: 'bower_components/jquery/dist/jquery.min.js',
         jquerySourceMap: 'bower_components/jquery/dist/jquery.min.map',
-        modernizr: 'bower_components/modernizr/modernizr.js',
+        modernizrDevFile: 'bower_components/modernizr/dist/modernizr-build.js',
         picturefill: 'bower_components/picturefill/dist/picturefill.min.js',
         equalizeHeights: 'bower_components/equalize-heights/dist/equalize-heights.min.js',
       }

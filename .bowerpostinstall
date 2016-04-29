@@ -12,3 +12,13 @@ then
 else
     echo ""
 fi
+
+# Build modernizr
+modernizr_build_file="bower_components/modernizr/dist/modernizr-build.js"
+if ! [ -f "$modernizr_build_file" ]
+then
+    echo "Please wait, building modernizr..."
+    (cd bower_components/modernizr/; npm install; grunt)
+else
+    echo ""
+fi
