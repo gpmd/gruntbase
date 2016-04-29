@@ -16,6 +16,9 @@ module.exports = {
     uglify: true,
     matchCommunityTests: true,
     tests : [
+      'csscolumns',
+      'flexbox',
+      'picture',
       'touchevents'
     ],
     excludeTests: [
